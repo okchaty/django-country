@@ -1,0 +1,5 @@
+- model: country.Country
+  pk: 1
+  fields:
+    name: Perú
+    code: PE

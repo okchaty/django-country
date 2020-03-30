@@ -1,1 +1,1 @@
-# Django-country
+# Django-country-utils

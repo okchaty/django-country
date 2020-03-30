@@ -1,4 +1,4 @@
-# Django-country
+# Django-country-utils
 
 Package to add Country , Currency and PhoneCode apps
 to django.
@@ -6,7 +6,7 @@ to django.
 ## Installation
 
 To install this package run
-`pip install django-country`
+`pip install django-country-utils`
 
 ## Usage
 

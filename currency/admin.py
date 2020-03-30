@@ -6,5 +6,8 @@ from .models import Currency
 class CurrencyAdmin(admin.ModelAdmin):
     list_display = (
         "name",
+        "abbreviation",
         "currency_symbol",
+        "currency_format",
+        "number_format",
     )

@@ -6,5 +6,9 @@ from .models import Country
 class CountryAdmin(admin.ModelAdmin):
     list_display = (
         "name",
+        "code",
+        "language",
+        "extra",
         "currency"
     )
+    raw_id_fields = ("currency",)

@@ -15,11 +15,17 @@ To use it add to settings.py
 ``` python
 
 INSTALLED_APPS = [
-
-    # previous modules  
+    ...
     'currency',
     'country',
     'phonecode',
+    ...
 ]
 
+```
+
+To use it add to settings.py
+
+``` python
+python manage.py loaddata country
 ```

@@ -5,7 +5,7 @@ from model_utils.models import TimeStampedModel
 
 class Country(TimeStampedModel):
     name = models.CharField(max_length=255)
-    code = models.CharField(max_length=45, blank=True)
+    code = models.CharField(max_length=45, unique=True)
     language = models.CharField(max_length=45)
     extra = JSONField()
     currency = models.ForeignKey(

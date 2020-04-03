@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=255)),
                 ('code', models.CharField(max_length=45, unique=True)),
                 ('language', models.CharField(max_length=45)),
-                ('extra', django.contrib.postgres.fields.jsonb.JSONField()),
+                ('extra', django.contrib.postgres.fields.jsonb.JSONField(blank=True, null=True)),
                 ('currency', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='countries', to='currency.Currency')),
             ],
             options={

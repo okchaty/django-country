@@ -7,7 +7,7 @@ class Country(TimeStampedModel):
     name = models.CharField(max_length=255)
     code = models.CharField(max_length=45, unique=True)
     language = models.CharField(max_length=45)
-    extra = JSONField()
+    extra = JSONField(blank=True, null=True)
     currency = models.ForeignKey(
         "currency.Currency",
         on_delete=models.CASCADE,

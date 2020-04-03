@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name="django-country-utils",
-    version="0.2.10",
+    version="0.2.11",
     author="Chaty",
     author_email="develop@okchaty.com",
     packages=[

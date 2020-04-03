@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name="django-country-utils",
-    version="0.2.8",
+    version="0.2.9",
     author="Chaty",
     author_email="develop@okchaty.com",
     packages=[
@@ -19,13 +19,12 @@ setup(
         "phonecode.migrations",
     ],
     include_package_data=True,
-    scripts=[
-        "country.fixtures.country.yaml",
-    ],
+    scripts=[],
     url="https://github.com/okchaty/django-country",
     license="MIT License",
     description="Support for generic apps of country, currencies and phonecodes.",
     long_description=open("README.md").read() if exists("README.md") else "",
+    long_description_content_type='text/markdown',
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Framework :: Django",

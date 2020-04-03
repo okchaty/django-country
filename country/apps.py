@@ -4,7 +4,7 @@ from django.db.models.signals import post_migrate
 
 
 def populate_data(sender, **kwargs):
-    call_command("loaddata", "country", verbosity=1)
+    call_command("populate_countries", verbosity=1)
 
 
 class CountryConfig(AppConfig):
